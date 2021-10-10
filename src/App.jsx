@@ -1,5 +1,5 @@
-import React from 'react'
-import NavBar from './sectionsComponents/NavBar';
+import React from "react";
+import NavBar from "./sectionsComponents/NavBar";
 
 function App() {
   return (

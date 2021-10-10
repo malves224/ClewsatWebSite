@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import './css/navBar.css';
+import React, { PureComponent } from "react";
+import "./css/navBar.css";
 
-class NavBar extends Component {
+class NavBar extends PureComponent {
   render() {
     return (
       <div>
-        <p className='teste'> oi eu sou seu navBar </p>
+        <p className="teste"> oi eu sou seu navBar </p>
       </div>
-    )
+    );
   }
 }
 
-export default NavBar
+export default NavBar;
