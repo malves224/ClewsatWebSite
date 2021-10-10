@@ -7,6 +7,8 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import imgLogo from "../img/logo-white.png";
 
+import OverlayMenu from "./components/OverlayMenu";
+
 class NavBar extends Component {
   constructor() {
     super();
@@ -27,14 +29,16 @@ class NavBar extends Component {
   render() {
     const { menu } = this.state;
     return (
-      <nav>
-        <img src={imgLogo} alt="imagem do logo da empresa." />
-        <button name="menu" id="menu" onClick={this.handleClick} type="button">
-          { !menu ? <FontAwesomeIcon icon={faBars} />
-            : <FontAwesomeIcon icon={faTimes} />}
-        </button>
-        { menu && console.log("renderOverLay")}
-      </nav>
+      <section>
+        <nav>
+          <img src={imgLogo} alt="imagem do logo da empresa." />
+          <button name="menu" id="menu" onClick={this.handleClick} type="button">
+            { !menu ? <FontAwesomeIcon icon={faBars} />
+              : <FontAwesomeIcon icon={faTimes} />}
+          </button>
+        </nav>
+        {menu && <OverlayMenu />}
+      </section>
     );
   }
 }
