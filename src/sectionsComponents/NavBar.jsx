@@ -31,7 +31,7 @@ class NavBar extends Component {
     return (
       <section>
         <nav>
-          <img src={imgLogo} alt="imagem do logo da empresa." />
+          <img src={imgLogo} alt="imagem do logo da empresa clewsat rastreamento." />
           <button name="menu" id="menu" onClick={this.handleClick} type="button">
             { !menu ? <FontAwesomeIcon icon={faBars} />
               : <FontAwesomeIcon icon={faTimes} />}

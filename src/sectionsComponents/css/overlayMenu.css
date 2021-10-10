@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
-
 .list-menu { 
   margin-top: 40px;
   margin-left: 20px
@@ -18,4 +17,14 @@ aside {
   background-color: #180A29;
   width: 100%;
   height: 100%;
+}
+
+button { 
+  background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  color: white;
 }

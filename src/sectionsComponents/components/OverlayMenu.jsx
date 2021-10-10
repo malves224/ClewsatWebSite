@@ -6,7 +6,7 @@ class OverlayMenu extends PureComponent {
     return (
       <aside>
         <ul className="list-menu">
-          <li>Diferencias</li>
+          <li><button onClick={() => console.log("ir até a section")} type="button">Diferencias</button></li>
           <li>Nosso aplicativo</li>
           <li>Depoimentos de clientes</li>
           <li>Planos e preços</li>
