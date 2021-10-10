@@ -5,7 +5,7 @@ import "./css/navBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-import imgLogo from "../img/logo-white-tracker.svg";
+import imgLogo from "../img/logo-white.png";
 
 class NavBar extends Component {
   constructor() {
