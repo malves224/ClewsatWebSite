@@ -1,0 +1,36 @@
+export const heroText = {
+	title: 'CLEWSAT Rastreamento em tempo real pelo app.',
+	paragraph: 'Com a Clewsat rastreamento, você acompanha tudo que acontece com seu veiculo em tempo real pelo o app em seu smartphone. '
+};
+
+export const textsRedColor = {
+	clewsat: 'Clewsat',
+	trackerRealTime: 'Rastreamento em tempo real',
+	blockApp: 'Bloqueio pelo aplicativo',
+	positionReports: 'Relatorio de posições',
+	company: 'empresa',
+}
+
+export const differences = {
+	title: `Só pra quem tem`, // sepera o nome clewsa para aplica cor
+	description: 'A Clewsat rastreamento é uma empresa focado na segurança dos clientes.',
+	cardsDifferences: [{
+		icon: 'fas fa-map-marked-alt',
+		title: 'Rastreamento em tempo real.',
+		description: 'Saiba onde está seu veiculo em tempo real acessando pelo app.',
+	}, {
+		icon: 'fas fa-unlock-alt',
+		title: 'Bloqueador pelo app',
+		description: 'Bloqueie seu veiculo pelo aplicativo, de qualquer lugar do mundo.',
+	},
+	{
+		icon: 'fas fa-user-secret',
+		title: 'Equipe de busca',
+		description: 'Conte com uma equipe de busca para recuperação do seu veiculo com segurança',
+	},
+	{
+		icon: 'fas fa-car-crash',
+		title: 'Reboque para imprevistos',
+		description: 'Imprevistos acontece, por isso temos a opção de adicionar assistência com guincho em seu plano',
+	}]
+}
