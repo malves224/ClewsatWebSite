@@ -1,12 +1,21 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import "./css/navBar.css";
+import imgLogo from "../img/logo-white-tracker.svg";
 
-class NavBar extends PureComponent {
+class NavBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      // menu: false,
+    };
+  }
+
   render() {
     return (
-      <div>
-        <p className="teste"> oi eu sou seu navBar </p>
-      </div>
+      <nav>
+        <img src={imgLogo} alt="imagem do logo da empresa." />
+        <button type="button">menu</button>
+      </nav>
     );
   }
 }
