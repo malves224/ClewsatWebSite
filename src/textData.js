@@ -34,3 +34,11 @@ export const differences = {
 		description: 'Imprevistos acontece, por isso temos a opção de adicionar assistência com guincho em seu plano',
 	}]
 }
+
+export const appTech = {
+	title: 'Tecnologia',
+	description: 'Saiba onde está o seu veículo apenas usando seu celular pelo nosso aplicativo, Monitore a velocidade, bateria do veiculo, histórico de posição, utilize o bloqueio via satélite acionado pelo aplicativo. Ideal para agilizar a localização do veículo em caso de roubo ou furto.',
+	subtitle: 'O Aplicativo é bem simples de utilizar e intuitivo.',
+	mainFunctionText: 'Principais funções do aplicativo:',
+	mainFunctions: ['tenha acesso a localização exata do seu veiculo.', 'Segurança na palma da mão.', 'Tenha controle total sobre o seu veiculo.'],
+}
