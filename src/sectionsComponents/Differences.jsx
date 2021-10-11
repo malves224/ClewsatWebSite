@@ -20,7 +20,9 @@ class Differences extends PureComponent {
           {differences.description}
         </p>
         <aside className="cards-differential ">
-          { cardsDifferences.map((card) => <CardDifferential differential={card} />)}
+          { cardsDifferences.map((card) => (
+            <CardDifferential key={card.title} differential={card} />
+          ))}
         </aside>
       </section>
     );
