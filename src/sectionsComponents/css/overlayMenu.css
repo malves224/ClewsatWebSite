@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
 .list-menu { 
   margin-top: 40px;
   margin-left: 20px
@@ -19,7 +20,7 @@ aside {
   height: 100%;
 }
 
-button { 
+.list-menu button { 
   background: none;
 	border: none;
 	padding: 0;
