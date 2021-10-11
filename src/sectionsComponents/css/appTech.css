@@ -46,10 +46,20 @@
 }
 
 .about-app {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   position: relative;
   z-index: -5;
   background-color: #2A004F;
   padding-bottom: 30px;
+}
+
+.about-app a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .about-app h3 {
