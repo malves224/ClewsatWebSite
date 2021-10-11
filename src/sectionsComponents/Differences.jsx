@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import "./css/differences.css";
 
-export class Differences extends PureComponent {
+class Differences extends PureComponent {
   render() {
     return (
       <div>
