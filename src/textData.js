@@ -20,26 +20,26 @@ const textsRedColor = {
 };
 
 const differences = {
-  title: "Só pra quem tem", // sepera o nome clewsa para aplica cor
+  title: "Só pra quem tem", // sepera o nome clewsat para aplica cor
   description: "A Clewsat rastreamento é uma empresa focado na segurança dos clientes.",
   cardsDifferences: [{
-    icon: "fas fa-map-marked-alt",
+    icon: "faMapMarkedAlt",
     title: "Rastreamento em tempo real.",
     description: "Saiba onde está seu veiculo em tempo real acessando pelo app.",
   }, {
-    icon: "fas fa-unlock-alt",
+    icon: "faUnlockAlt",
     title: "Bloqueador pelo app",
     description: "Bloqueie seu veiculo pelo aplicativo, de qualquer lugar do mundo.",
   },
   {
-    icon: "fas fa-user-secret",
+    icon: "faUserSecret",
     title: "Equipe de busca",
-    description: "Conte com uma equipe de busca para recuperação do seu veiculo com segurança",
+    description: "Conte com uma equipe de busca para recuperação do seu veiculo com segurança.",
   },
   {
-    icon: "fas fa-car-crash",
+    icon: "faCarCrash",
     title: "Reboque para imprevistos",
-    description: "Imprevistos acontece, por isso temos a opção de adicionar assistência com guincho em seu plano",
+    description: "Problema com o veiculo? basta solicitar um guincho.",
   },
   ],
 };

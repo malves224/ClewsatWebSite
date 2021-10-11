@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.differences {
+  padding-top: 20px;
+  background-color: #180A29;
+  height: 780px;
+  margin-bottom: 100;
+}
+
+.differences h2 span {
+  color: #EB003F;
+}
+
+.differences h2 { 
+  margin-top: 10px;
+  color: #FFFF;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.differences p {
+  margin-top: 10px;
+  color: #FFFF;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 25px;
+}
+
+.cards-differential {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
