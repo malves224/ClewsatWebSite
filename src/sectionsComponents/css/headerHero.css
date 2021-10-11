@@ -61,15 +61,6 @@
   margin-bottom: 35px;
 }
 
-#text-button {
-  color: #370B6D;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 30px;
-  font-size: 22px;
-}
-
 .hero button:hover { 
   transition: 500ms;
   background-color: #d6031f;
