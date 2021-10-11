@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./css/headerHero.css";
 import { heroText } from "../textData";
-import ButtonHireNow from "./components/ButtonHireNow";
 import imgMockup from "../img/mockup-hero.png";
+import ButtonHireNow from "./components/ButtonHireNow";
 
 class HeaderHero extends Component {
   constructor(props) {

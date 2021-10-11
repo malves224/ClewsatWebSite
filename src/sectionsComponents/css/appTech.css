@@ -35,20 +35,21 @@
 #app-gif {
   position: relative;
   z-index: -1;
-  margin-top: 60px;
+  margin-top: 118px;
   bottom: 780px;
-  width: 330px;
+  width: 305px;
   border-radius: 14px;
 }
 
 #phone-img {
-  width: 370px;
+  width: 340px;
 }
 
 .about-app {
   position: relative;
   z-index: -5;
   background-color: #2A004F;
+  padding-bottom: 30px;
 }
 
 .about-app h3 {
