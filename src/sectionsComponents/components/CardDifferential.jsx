@@ -51,11 +51,15 @@ class CardDifferential extends Component {
     const { differential: { description, title } } = this.props;
     const { icon } = this.state;
     return (
-      <div>
+      <aside className="card-diff">
         <i><FontAwesomeIcon icon={icon} /></i>
         <h3>{title}</h3>
+        <div className="divider">
+          <div id="divider-one" />
+          <div id="divider-two" />
+        </div>
         <p>{description}</p>
-      </div>
+      </aside>
     );
   }
 }
