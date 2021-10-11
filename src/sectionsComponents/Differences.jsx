@@ -1,20 +1,28 @@
 import React, { PureComponent } from "react";
 import "./css/differences.css";
 import { differences, textsRedColor } from "../textData";
+import CardDifferential from "./components/CardDifferential";
 
 class Differences extends PureComponent {
   render() {
+    const { cardsDifferences } = differences;
     return (
-      <main className="differences">
-        <h1>
+      <section className="differences">
+        <h2>
           {differences.title}
           {" "}
           <span>
             { textsRedColor.clewsat }
             .
           </span>
-        </h1>
-      </main>
+        </h2>
+        <p>
+          {differences.description}
+        </p>
+        <aside className="cards-differential ">
+          { cardsDifferences.map((card) => <CardDifferential differential={card} />)}
+        </aside>
+      </section>
     );
   }
 }
