@@ -29,7 +29,7 @@ class NavBar extends Component {
   render() {
     const { menu } = this.state;
     return (
-      <section>
+      <>
         <nav>
           <img src={imgLogo} alt="imagem do logo da empresa clewsat rastreamento." />
           <button name="menu" id="menu" onClick={this.handleClick} type="button">
@@ -38,7 +38,7 @@ class NavBar extends Component {
           </button>
         </nav>
         {menu && <OverlayMenu />}
-      </section>
+      </>
     );
   }
 }

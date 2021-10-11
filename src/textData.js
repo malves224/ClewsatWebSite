@@ -6,6 +6,11 @@ const heroText = {
   paragraph: "Com a Clewsat rastreamento, você acompanha tudo que acontece com seu veiculo em tempo real pelo o app em seu smartphone. ",
 };
 
+const buttonHireNow = {
+  text: "Contrate agora",
+  src: "https://api.whatsapp.com/send?phone=5511978046030&text=Ol%C3%A1,%20Tenho%20interesse%20no%20sistema%20de%20rastreamento.",
+};
+
 const textsRedColor = {
   clewsat: "Clewsat",
   trackerRealTime: "Rastreamento em tempo real",
@@ -124,4 +129,5 @@ export {
   businessCall,
   plansPrices,
   calledEnd,
+  buttonHireNow,
 };
