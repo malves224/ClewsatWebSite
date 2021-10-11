@@ -4,7 +4,7 @@ import "../css/overlayMenu.css";
 class OverlayMenu extends PureComponent {
   render() {
     return (
-      <aside>
+      <aside className="overlay">
         <ul className="list-menu">
           <li><button onClick={() => console.log("ir até a section")} type="button">Diferencias</button></li>
           <li>Nosso aplicativo</li>
