@@ -13,8 +13,10 @@ function App() {
     <body className="App">
       <NavBar />
       <HeaderHero />
-      <Differences />
-      <AppTech />
+      <main>
+        <Differences />
+        <AppTech />
+      </main>
       <GoogleEvidence />
       <CalledFrota />
       <PlansPrice />

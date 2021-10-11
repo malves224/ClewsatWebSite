@@ -20,7 +20,7 @@ const textsRedColor = {
 };
 
 const differences = {
-  title: "Só pra quem tem", // sepera o nome clewsa para aplica cor
+  title: "Só pra quem tem", // sepera o nome clewsat para aplica cor
   description: "A Clewsat rastreamento é uma empresa focado na segurança dos clientes.",
   cardsDifferences: [{
     icon: "fas fa-map-marked-alt",
