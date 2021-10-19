@@ -1,60 +1,23 @@
 /* eslint-disable class-methods-use-this */
-import React, { useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import React, { PureComponent } from "react";
 import "./css/googleEvidence.css";
 import fiveStar from "../img/google-rate.svg";
-import Evidence from "./components/Evidence";
 import { googleEvidence } from "../textData";
+import CarrouselDeposition from "./components/CarrouselDeposition";
 
-function GoogleEvidence() {
-  const carrousel = useRef(null);
-
-  const handleClickNext = () => {
-    carrousel.current.scrollLeft += carrousel.current.offsetWidth;
-  };
-
-  const handleClickPrevious = () => {
-    carrousel.current.scrollLeft -= carrousel.current.offsetWidth;
-  };
-
-  const { title, depositions } = googleEvidence;
-  return (
-    <section className="google-evidence">
-      <div id="title-google">
-        <h2>{title}</h2>
-        <img src={fiveStar} alt="5 estrelas do google" />
-      </div>
-
-      <div className="carrousel">
-        <div>
-          <button
-            onClick={handleClickPrevious}
-            type="button"
-          >
-            <FontAwesomeIcon icon={faChevronLeft} />
-          </button>
+class GoogleEvidence extends PureComponent {
+  render() {
+    const { title } = googleEvidence;
+    return (
+      <section className="google-evidence">
+        <div id="title-google">
+          <h2>{title}</h2>
+          <img src={fiveStar} alt="5 estrelas do google" />
         </div>
-        <div ref={carrousel} id="cards-carrousel">
-          {depositions.map((deposition) => (
-            <Evidence
-              key={deposition.namePeople}
-              deposition={deposition}
-            />
-          ))}
-        </div>
-        <div>
-          <button
-            onClick={handleClickNext}
-            type="button"
-          >
-            <FontAwesomeIcon icon={faChevronRight} />
-          </button>
-        </div>
-      </div>
-
-    </section>
-  );
+        <CarrouselDeposition />
+      </section>
+    );
+  }
 }
 
 export default GoogleEvidence;

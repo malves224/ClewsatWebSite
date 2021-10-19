@@ -3,11 +3,11 @@ import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import EvidenceCard from "./Evidence";
+import { googleEvidence } from "../../textData";
 import "../css/carrouselDeposition.css";
 
-function Carrousel(dataArr) {
+function Carrousel() {
   const carrousel = useRef(null);
-  const [data] = dataArr;
 
   const handleClickNext = () => {
     carrousel.current.scrollLeft += carrousel.current.offsetWidth;
@@ -28,7 +28,7 @@ function Carrousel(dataArr) {
         </button>
       </div>
       <div ref={carrousel} id="cards-carrousel">
-        {data.map((deposition) => (
+        {googleEvidence.depositions.map((deposition) => (
           <EvidenceCard
             key={deposition.namePeople}
             deposition={deposition}

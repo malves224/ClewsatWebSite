@@ -20,6 +20,7 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     max-width: 240px;
+    height: 330px;
   }
   
   #cards-carrousel::-webkit-scrollbar {
@@ -36,7 +37,7 @@
     background-color: #FFFF;
     margin: 10px;
     min-width: 220px;
-    height: 250px;
+    height: 300px;
   }
   
   .card-evidence .circle {
