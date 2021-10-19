@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .carrousel button {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    color: #370B6D;
+    cursor: pointer ;
+  }
+  
+  #cards-carrousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 240px;
+  }
+  
+  #cards-carrousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card-evidence {
+    border-radius: 6px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFF;
+    margin: 10px;
+    min-width: 220px;
+    height: 250px;
+  }
+  
+  .card-evidence .circle {
+    background-color: #EB003F;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .circle p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;  font-style: normal;
+    font-size: 50px;
+    color: #000000;
+  }
+  
+  .card-evidence .comment {
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+  }
+  
+  .name-people {
+    background-color: #370B6D;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .name-people p {
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px;
+  }

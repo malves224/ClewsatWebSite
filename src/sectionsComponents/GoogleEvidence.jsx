@@ -1,5 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import React, { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "./css/googleEvidence.css";
 import fiveStar from "../img/google-rate.svg";
 import Evidence from "./components/Evidence";
@@ -23,8 +25,16 @@ function GoogleEvidence() {
         <h2>{title}</h2>
         <img src={fiveStar} alt="5 estrelas do google" />
       </div>
+
       <div className="carrousel">
-        <div><button onClick={handleClickPrevious} type="button">previous</button></div>
+        <div>
+          <button
+            onClick={handleClickPrevious}
+            type="button"
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+        </div>
         <div ref={carrousel} id="cards-carrousel">
           {depositions.map((deposition) => (
             <Evidence
@@ -33,8 +43,16 @@ function GoogleEvidence() {
             />
           ))}
         </div>
-        <div><button onClick={handleClickNext} type="button">next</button></div>
+        <div>
+          <button
+            onClick={handleClickNext}
+            type="button"
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
       </div>
+
     </section>
   );
 }

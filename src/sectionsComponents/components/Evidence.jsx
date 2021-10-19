@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
-export default class Evidence extends PureComponent {
+export default class EvidenceCard extends PureComponent {
   render() {
     const { deposition: { namePeople, comment } } = this.props;
     return (
@@ -20,7 +20,7 @@ export default class Evidence extends PureComponent {
   }
 }
 
-Evidence.propTypes = {
+EvidenceCard.propTypes = {
   deposition: PropTypes.shape({
     namePeople: PropTypes.string,
     comment: PropTypes.string,

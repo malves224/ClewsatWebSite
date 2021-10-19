@@ -28,7 +28,7 @@ class AppTech extends Component {
           <h3>{appTech.subtitle}</h3>
           <h4>{appTech.mainFunctionText}</h4>
           {texts.map((text, index) => (
-            <p className="paragraph">
+            <p key={text} className="paragraph">
               <span>{textsRedColor[keysRedTexts[index + 1]]}</span>
               {" "}
               {text}
