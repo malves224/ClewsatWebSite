@@ -4,7 +4,7 @@ import "./css/calledFrota.css";
 class CalledFrota extends PureComponent {
   render() {
     return (
-      <div>
+      <div className="called-frota">
         <p> hi i am calledFrota </p>
       </div>
     );
