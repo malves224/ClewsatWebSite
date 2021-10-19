@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+.called-frota {
+  background-color: #370B6D;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+}
+
+.called-frota h2 {
+  color: #FFFF;
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.called-frota span {
+  color: #EB003F;
+}
+
+.called-frota p {
+  color: aliceblue;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.called-frota a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
