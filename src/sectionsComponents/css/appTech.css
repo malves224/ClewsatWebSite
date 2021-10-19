@@ -2,7 +2,6 @@
 
 .tech {
   position: relative;
-  z-index: -2;
   background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
@@ -34,7 +33,7 @@
 
 #app-gif {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   margin-top: 118px;
   bottom: 780px;
   width: 305px;
@@ -43,6 +42,7 @@
 
 #phone-img {
   width: 340px;
+  z-index: 2;
 }
 
 .about-app {
@@ -50,12 +50,12 @@
   flex-flow: column;
   align-items: center;
   position: relative;
-  z-index: -5;
   background-color: #2A004F;
   padding-bottom: 30px;
 }
 
 .about-app a {
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;

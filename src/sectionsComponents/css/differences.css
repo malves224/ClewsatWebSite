@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 .differences {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   background-color: #180A29;
   height: 780px;
@@ -11,7 +13,7 @@
   color: #EB003F;
 }
 
-.differences h2 { 
+.differences h2 {
   margin-top: 10px;
   color: #FFFF;
   font-family: Nunito;
@@ -38,6 +40,7 @@
 }
 
 .cards-differential {
+  z-index: 2;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
