@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import EvidenceCard from "./Evidence";
+import EvidenceCard from "./EvidenceCard";
 import { googleEvidence } from "../../textData";
 import "../css/carrouselDeposition.css";
 

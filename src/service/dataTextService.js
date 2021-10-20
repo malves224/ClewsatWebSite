@@ -1,34 +1,32 @@
 const dataBenefits = [{
   nameBenefits: "trackerRealtime",
-  status: null,
   textBenefits: "Rastreamento pelo app.",
 },
 {
   nameBenefits: "historyPosition",
-  status: null,
   textBenefits: "historico de posição",
 },
 {
   nameBenefits: "homeInstallation",
-  status: null,
   textBenefits: "Instalação em domicilio",
 },
 {
   nameBenefits: "blocker",
-  status: null,
   textBenefits: "Bloqueador pelo app.",
 },
 {
   nameBenefits: "teamRecovery",
-  status: null,
   textBenefits: "Equipe de recuperação",
 },
 {
   nameBenefits: "assistance",
-  status: null,
   textBenefits: "Guincho 24h, 200KM",
 },
 ];
+
+const LITE = "lite";
+const PRO = "pro";
+const PREMIUM = "premium";
 
 const switchPlan = (plan) => {
   const BENEFITS_LITE = ["trackerRealtime", "historyPosition", "homeInstallation"];
@@ -36,13 +34,13 @@ const switchPlan = (plan) => {
   const BENEFITS_ALL = ["trackerRealtime", "historyPosition", "homeInstallation", "blocker", "teamRecovery", "assistance"];
   let benefitsRight = [];
   switch (plan) {
-    case "lite":
+    case LITE:
       benefitsRight = BENEFITS_LITE;
       break;
-    case "pro":
+    case PRO:
       benefitsRight = BENEFITS_PRO;
       break;
-    case "premium":
+    case PREMIUM:
       benefitsRight = BENEFITS_ALL;
       break;
     default:
@@ -50,21 +48,22 @@ const switchPlan = (plan) => {
   return benefitsRight;
 };
 
-const returnObjBenefits = (plan) => {
-  const planCurrent = switchPlan(plan);
+const returnBenefitsArr = (plan) => {
+  const planFormated = plan.toLowerCase();
+  const planCurrent = switchPlan(planFormated);
   let benefitsOutput = [];
   dataBenefits.forEach((data, index) => {
     if (data.nameBenefits === planCurrent[index]) {
-      const objManipuled = data;
+      const objManipuled = { ...data };
       objManipuled.status = true;
-      benefitsOutput = [...benefitsOutput, dataBenefits[index]];
+      benefitsOutput = [...benefitsOutput, objManipuled];
     } else {
-      const objManipuled = data;
+      const objManipuled = { ...data };
       objManipuled.status = false;
-      benefitsOutput = [...benefitsOutput, dataBenefits[index]];
+      benefitsOutput = [...benefitsOutput, objManipuled];
     }
   });
   return benefitsOutput;
 };
 
-export default returnObjBenefits;
+export default returnBenefitsArr;
