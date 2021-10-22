@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.plans-price {
+  background-color: #18002D;
+  padding: 15px 25px;
+}
+
+.plans-price h2 {
+  color: #FFFF;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+}
+
+.carrousel-plans {
+  width: 250%;
+  display: flex;
+  align-items: center;
+}
