@@ -2,7 +2,6 @@
 
 .item-plan {
   background-color: #ffff;
-  margin: 0 15px;
   border-radius: 8px;
   min-width: 90%;
   max-width: 85%; /* controla tamanho do card junto ao arquivo plansPrice.css*/

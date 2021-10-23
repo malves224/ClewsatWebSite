@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useRef } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "./css/plansPrice.css";
@@ -8,19 +9,22 @@ import PlanCard from "./components/PlanCard";
 
 function PlansPrice() {
   const carrousel = useRef(null);
-  function setScrollCarrousel() {
-    carrousel.current.scrollLeft = 384;
+  function setScroll() {
+    const { current: { scrollLeft, offsetWidth } } = carrousel;
+    carrousel.current.scrollLeft += offsetWidth;
   }
 
   const handleClickNext = () => {
+    console.log(carrousel);
     carrousel.current.scrollLeft += carrousel.current.offsetWidth;
   };
 
   const handleClickPrevious = () => {
     carrousel.current.scrollLeft -= carrousel.current.offsetWidth;
   };
-
+  useLayoutEffect(() => setScroll());
   function renderCarrousel() {
+    const { current } = carrousel;
     return (
       <div className="carrousel-content">
         <button
@@ -38,7 +42,6 @@ function PlansPrice() {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
-        {setScrollCarrousel()}
       </div>
     );
   }
