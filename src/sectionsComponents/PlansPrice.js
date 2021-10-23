@@ -38,6 +38,7 @@ function PlansPrice() {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
+        {setScrollCarrousel()}
       </div>
     );
   }
@@ -52,7 +53,6 @@ function PlansPrice() {
         </div>
       </header>
       {renderCarrousel()}
-      {setScrollCarrousel()}
     </section>
   );
 }
