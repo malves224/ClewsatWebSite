@@ -117,7 +117,7 @@ const plansPrices = {
 };
 
 const calledEnd = {
-  title: "proteção para seu veiculo acessível",
+  title: "Proteção para seu veiculo acessível.",
 };
 
 export {

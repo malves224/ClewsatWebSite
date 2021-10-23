@@ -24,7 +24,9 @@ function PlansPrice() {
     const addScrollValue = offSet;
     carrousel.current.scrollLeft -= addScrollValue;
   };
+
   useLayoutEffect(() => setScroll());
+
   function renderCarrousel() {
     return (
       <div className="carrousel-content">
@@ -46,6 +48,7 @@ function PlansPrice() {
       </div>
     );
   }
+
   return (
     <section className="plans-price">
       <header className="header-plans">
