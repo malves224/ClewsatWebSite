@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useRef, useLayoutEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,21 +9,23 @@ import PlanCard from "./components/PlanCard";
 function PlansPrice() {
   const carrousel = useRef(null);
   function setScroll() {
-    const { current: { scrollLeft, offsetWidth } } = carrousel;
+    const { current: { offsetWidth } } = carrousel;
     carrousel.current.scrollLeft += offsetWidth;
   }
 
   const handleClickNext = () => {
-    console.log(carrousel);
-    carrousel.current.scrollLeft += carrousel.current.offsetWidth;
+    const offSet = carrousel.current.offsetWidth;
+    const addScrollValue = offSet;
+    carrousel.current.scrollLeft += addScrollValue;
   };
 
   const handleClickPrevious = () => {
-    carrousel.current.scrollLeft -= carrousel.current.offsetWidth;
+    const offSet = carrousel.current.offsetWidth;
+    const addScrollValue = offSet;
+    carrousel.current.scrollLeft -= addScrollValue;
   };
   useLayoutEffect(() => setScroll());
   function renderCarrousel() {
-    const { current } = carrousel;
     return (
       <div className="carrousel-content">
         <button

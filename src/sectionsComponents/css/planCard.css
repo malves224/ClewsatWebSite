@@ -8,6 +8,20 @@
   height: 400px;
 }
 
+.item-plan:nth-child(1) {
+  margin-right: 6vw;
+  margin-left: 6vw;
+}
+
+.item-plan:nth-child(2) {
+  margin-right: 6vw;
+}
+
+.item-plan:nth-child(3) {
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
 .body-item {
   display: flex;
   flex-direction: column;
