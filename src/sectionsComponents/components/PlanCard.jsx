@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTimes, faCheck,
 } from "@fortawesome/free-solid-svg-icons";
-
 import PropTypes from "prop-types";
+import imgBlackFriday from "../../img/selo-blackFriday.svg";
 import Button from "./Button";
 import { buttonHireNow } from "../../textData";
 import "../css/planCard.css";
@@ -16,30 +16,34 @@ export default class PlanCard extends PureComponent {
         plan, price, recurrence, benefits, promotional,
       },
     } = this.props;
-    // console.log(benefits(plan));
+    const { status, pricePromotional } = promotional;
     return (
-      <div className="item-plan">
-        <header className={promotional.status ? "header-promotional" : "header-no-promotional"}>
-          <h3>{plan}</h3>
-          <div className="price-plan">
-            <h4>{price}</h4>
+      <section className="item-plan">
+        <header className={status ? "header-promotional" : "header-no-promotional"}>
+          <div className={status ? "blackFriday" : ""}>
+            <h3>{plan}</h3>
+            {status && <img src={imgBlackFriday} alt="selo black Frydai" />}
+          </div>
+          <div className={status ? "price-current-content" : ""}>
+            <h4 className={status ? "price-previous" : ""}>{price}</h4>
+            {status && <span className={status ? "price-current" : ""}>{pricePromotional}</span> }
             <p>{recurrence}</p>
           </div>
         </header>
-        <body className="body-item">
+        <article className="body-item">
           <ol className="list-benefits">
             {benefits(plan)
-              .map(({ textBenefits, status }) => (
-                <li className={status ? "benefit-check benefit" : "benefit-No benefit"}>
-                  <FontAwesomeIcon icon={status ? faCheck : faTimes} />
+              .map(({ textBenefits, status: statusBene }) => (
+                <li key={textBenefits} className={statusBene ? "benefit-check benefit" : "benefit-No benefit"}>
+                  <FontAwesomeIcon icon={statusBene ? faCheck : faTimes} />
                   {" "}
                   {textBenefits}
                 </li>
               ))}
           </ol>
           <Button src={buttonHireNow.src} text={buttonHireNow.text} />
-        </body>
-      </div>
+        </article>
+      </section>
     );
   }
 }
