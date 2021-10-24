@@ -4,22 +4,12 @@
   background-color: #ffff;
   border-radius: 8px;
   min-width: 90%;
-  max-width: 85%; /* controla tamanho do card junto ao arquivo plansPrice.css*/
   height: 400px;
+  margin-right: 8vw;
 }
 
-.item-plan:nth-child(1) {
-  margin-right: 6vw;
-  margin-left: 6vw;
-}
-
-.item-plan:nth-child(2) {
-  margin-right: 6vw;
-}
-
-.item-plan:nth-child(3) {
-  margin-left: 6vw;
-  margin-right: 6vw;
+.item-plan:last-child  {
+  margin-left: 0;
 }
 
 .body-item {
@@ -144,4 +134,20 @@
   color: #D1D1D1;
   text-decoration-line: line-through;
   font-size: 16px;
+}
+
+
+@media (min-width: 690px) {
+  .item-plan {
+    min-width: 30%;
+  }
+  .benefit {
+    font-size: 16px;
+  }
+  .no-installation p {
+    font-size: 18px;
+  }
+  .item-plan {
+    margin-right: 0;
+  }
 }

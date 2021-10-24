@@ -58,12 +58,10 @@
 }
 
 .carrousel-plans {
-  overflow-x: auto;
   overflow: hidden;
   scroll-behavior: smooth;
-  height: 410px;
+  max-height: 504px;
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -82,6 +80,15 @@
   border: none;
   font-size: 22px;
   color: #370B6D;
-  cursor: pointer ;
+  cursor: pointer;
+}
 
+@media (min-width: 690px) {
+  .button-navegation {
+    display: none;
+  }
+  .carrousel-plans {
+    justify-content: space-between;
+    width: 100%;
+  }
 }

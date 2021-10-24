@@ -31,6 +31,7 @@ function PlansPrice() {
     return (
       <div className="carrousel-content">
         <button
+          className="button-navegation"
           onClick={handleClickPrevious}
           type="button"
         >
@@ -40,6 +41,7 @@ function PlansPrice() {
           {plansPrices.plansCard.map((plan) => <PlanCard key={plan.plan} plan={plan} />)}
         </div>
         <button
+          className="button-navegation"
           onClick={handleClickNext}
           type="button"
         >
