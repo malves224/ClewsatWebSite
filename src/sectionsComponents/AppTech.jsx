@@ -17,7 +17,7 @@ class AppTech extends Component {
   render() {
     const { keysRedTexts, texts } = this.state;
     return (
-      <div className="app-tech">
+      <div id="aplicativo" className="app-tech">
         <aside className="tech">
           <h2>{appTech.title}</h2>
           <p>{appTech.description}</p>

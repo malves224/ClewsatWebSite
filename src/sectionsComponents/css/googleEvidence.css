@@ -30,3 +30,11 @@
   align-items: center;
   flex-direction: column;
 }
+
+#evidence-descricption  {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  color: #000000;
+  text-align: center;
+  margin-left: 5px;
+}

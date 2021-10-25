@@ -9,8 +9,7 @@ import PlanCard from "./components/PlanCard";
 function PlansPrice() {
   const carrousel = useRef(null);
   function setScroll() {
-    const { current: { offsetWidth } } = carrousel;
-    carrousel.current.scrollLeft += offsetWidth;
+    carrousel.current.scrollLeft += 265;
   }
 
   const handleClickNext = () => {
@@ -52,10 +51,9 @@ function PlansPrice() {
   }
 
   return (
-    <section className="plans-price">
+    <section id="planos" className="plans-price">
       <header className="header-plans">
         <h2>{plansPrices.title}</h2>
-        <p>Escolha seu plano</p>
         <div className="blackfriday-text">
           <h3>BLACK FRIDAY</h3>
           <p id="blackfriday-p">DE VERDADE</p>
