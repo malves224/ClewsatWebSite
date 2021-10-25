@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.plans-price {
+  background-color: #18002D;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+}
+
+.header-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-plans h2 {
+  color: #FFFF;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.header-plans p {
+  color: #FFFF;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 15px;
+  height: inherit;
+}
+
+.blackfriday-text {
+  margin-top: 15px;
+}
+
+.blackfriday-text  h3, #blackfriday-p{
+  font-family: 'Nunito', sans-serif;
+  font-style: oblique 40deg;
+  font-weight: 900;
+}
+
+.blackfriday-text h3 {
+  color: #FFFF;
+  font-size: 40px;
+}
+
+#blackfriday-p {
+  color: #FFD700;
+  font-size: 20px;
+  line-height: 0;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.carrousel-plans {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  max-height: 504px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.carrousel-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carrousel-content button {
+  background-color: #EB003F;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  color: #370B6D;
+  cursor: pointer;
+}
+
+@media (min-width: 690px) {
+  .button-navegation {
+    display: none;
+  }
+  .carrousel-plans {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

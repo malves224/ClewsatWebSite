@@ -10,6 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  z-index: 99;
 }
 
 nav img { 

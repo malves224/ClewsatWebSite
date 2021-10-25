@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/extensions
-import returnObjBenefits from "./service/dataText.js";
+import returnBenefitsArr from "./service/dataTextService.js";
 
 const heroText = {
   title: "CLEWSAT Rastreamento em tempo real pelo app.",
@@ -92,7 +92,7 @@ const plansPrices = {
       status: false,
       pricePromotional: "R$ 54,90",
     },
-    benefits: () => returnObjBenefits("lite"),
+    benefits: (plan) => returnBenefitsArr(plan),
   },
   {
     plan: "Pro",
@@ -102,7 +102,7 @@ const plansPrices = {
       status: true,
       pricePromotional: "R$ 59,90",
     },
-    benefits: () => returnObjBenefits("pro"),
+    benefits: (plan) => returnBenefitsArr(plan),
   },
   {
     plan: "Premium",
@@ -112,12 +112,12 @@ const plansPrices = {
       status: true,
       pricePromotional: "R$ 79,90",
     },
-    benefits: () => returnObjBenefits("premium"),
+    benefits: (plan) => returnBenefitsArr(plan),
   }],
 };
 
 const calledEnd = {
-  title: "proteção para seu veiculo acessível",
+  title: "Proteção para seu veiculo acessível.",
 };
 
 export {

@@ -7,10 +7,11 @@ import GoogleEvidence from "./sectionsComponents/GoogleEvidence";
 import CalledFrota from "./sectionsComponents/CalledFrota";
 import PlansPrice from "./sectionsComponents/PlansPrice";
 import CalledEnd from "./sectionsComponents/CalledEnd";
+import Footer from "./sectionsComponents/Footer";
 
 function App() {
   return (
-    <body className="App">
+    <>
       <NavBar />
       <HeaderHero />
       <main>
@@ -21,7 +22,8 @@ function App() {
       <CalledFrota />
       <PlansPrice />
       <CalledEnd />
-    </body>
+      <Footer />
+    </>
   );
 }
 

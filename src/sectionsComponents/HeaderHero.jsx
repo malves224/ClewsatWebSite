@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./css/headerHero.css";
-import { heroText } from "../textData";
+import { heroText, buttonHireNow } from "../textData";
 import imgMockup from "../img/mockup-hero.png";
-import ButtonHireNow from "./components/ButtonHireNow";
+import Button from "./components/Button";
 
 class HeaderHero extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class HeaderHero extends Component {
         <img src={imgMockup} alt="um carro e uma moto, e um celular com o app" />
         <h1>{ heroText.title }</h1>
         <p id="paragraph">{ heroText.paragraph }</p>
-        <ButtonHireNow />
+        <Button src={buttonHireNow.src} text={buttonHireNow.text} />
       </header>
     );
   }

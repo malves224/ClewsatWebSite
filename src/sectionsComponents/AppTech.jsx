@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./css/appTech.css";
 import mockupApp from "../img/iphone-mockup.png";
 import gifApp from "../img/gif-operation-app.gif";
-import { appTech, textsRedColor } from "../textData";
-import ButtonHireNow from "./components/ButtonHireNow";
+import { appTech, textsRedColor, buttonHireNow } from "../textData";
+import Button from "./components/Button";
 
 class AppTech extends Component {
   constructor() {
@@ -34,7 +34,7 @@ class AppTech extends Component {
               {text}
             </p>
           ))}
-          <ButtonHireNow />
+          <Button src={buttonHireNow.src} text={buttonHireNow.text} />
         </section>
       </div>
     );

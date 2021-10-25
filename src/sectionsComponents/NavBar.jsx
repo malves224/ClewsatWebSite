@@ -26,6 +26,12 @@ class NavBar extends Component {
     });
   }
 
+  closeMenu() {
+    this.setState({
+      menu: false,
+    });
+  }
+
   render() {
     const { menu } = this.state;
     return (
@@ -37,7 +43,7 @@ class NavBar extends Component {
               : <FontAwesomeIcon icon={faTimes} />}
           </button>
         </nav>
-        {menu && <OverlayMenu />}
+        {menu && <OverlayMenu closeMenu={this.handleClick} />}
       </>
     );
   }

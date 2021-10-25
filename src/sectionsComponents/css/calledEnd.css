@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+.called-end-container {
+  background-color: #E5E5E5;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 49px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.called-end-container h2 { 
+  color: #370B6D;
+}
+
+.called-end-container span {
+  color: #EB003F;
+}
+
+.called-end-container a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-decoration: none;
+}
