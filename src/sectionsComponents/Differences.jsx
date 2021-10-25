@@ -7,7 +7,7 @@ class Differences extends PureComponent {
   render() {
     const { cardsDifferences } = differences;
     return (
-      <section className="differences">
+      <section id="diferencias" className="differences">
         <h2>
           {differences.title}
           {" "}
