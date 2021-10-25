@@ -8,10 +8,12 @@ import CalledFrota from "./sectionsComponents/CalledFrota";
 import PlansPrice from "./sectionsComponents/PlansPrice";
 import CalledEnd from "./sectionsComponents/CalledEnd";
 import Footer from "./sectionsComponents/Footer";
+import ButtonWpp from "./sectionsComponents/components/ButtonWpp";
 
 function App() {
   return (
     <>
+      <ButtonWpp />
       <NavBar />
       <HeaderHero />
       <main>

@@ -96,7 +96,7 @@ const plansPrices = {
   },
   {
     plan: "Pro",
-    price: "R$ 69,90",
+    price: "R$ 79,90",
     recurrence: "Por mês",
     promotional: {
       status: true,
