@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable react/jsx-filename-extension */
+import React, { useEffect } from "react";
+import ReactGA from "react-ga4";
 import NavBar from "./sectionsComponents/NavBar";
 import HeaderHero from "./sectionsComponents/HeaderHero";
 import Differences from "./sectionsComponents/Differences";
@@ -11,6 +13,11 @@ import Footer from "./sectionsComponents/Footer";
 import ButtonWpp from "./sectionsComponents/components/ButtonWpp";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-NJ8KWTZ84J");
+    ReactGA.send("/");
+  }, []);
+
   return (
     <>
       <ButtonWpp />
