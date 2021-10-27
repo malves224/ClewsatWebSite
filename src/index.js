@@ -1,11 +1,16 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
 import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" render={() => <App />} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root"),
 );
