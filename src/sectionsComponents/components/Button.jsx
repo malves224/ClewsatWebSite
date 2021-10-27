@@ -7,7 +7,7 @@ class Button extends PureComponent {
     const { src, text } = this.props;
     return (
       <a href={src} target="_blank" rel="noreferrer">
-        <button id="button" type="button"><p id="text-button">{ text }</p></button>
+        <button className="button" type="button"><p id="text-button">{ text }</p></button>
       </a>
     );
   }

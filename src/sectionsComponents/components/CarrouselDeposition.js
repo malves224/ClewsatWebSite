@@ -21,6 +21,7 @@ function Carrousel() {
     <div className="carrousel">
       <div>
         <button
+          aria-label="Anterior"
           onClick={handleClickPrevious}
           type="button"
         >
@@ -37,6 +38,7 @@ function Carrousel() {
       </div>
       <div>
         <button
+          aria-label="Proximo"
           onClick={handleClickNext}
           type="button"
         >

@@ -12,14 +12,14 @@
 
 .tech h2 {
   padding-top: 230px;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: bold;
   font-size: 52px;
 }
 
 .tech p {
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -66,7 +66,7 @@
   margin-top: 40px;
   padding-top: 140px;
   color: #ffff;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -76,7 +76,7 @@
 
 .about-app h4 { 
   color: #ffff;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -88,12 +88,14 @@
   margin-top: 10px;
   padding: 7.5px 20px;
   color: #E5E5E5;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
 }
 
 .paragraph span { 
-  color: #EB003F;
+  color: #ff253a;
+  font-family: 'Nunito';
+  font-style: normal;
 }

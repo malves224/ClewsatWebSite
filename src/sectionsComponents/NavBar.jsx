@@ -38,7 +38,7 @@ class NavBar extends Component {
       <>
         <nav>
           <img src={imgLogo} alt="imagem do logo da empresa clewsat rastreamento." />
-          <button name="menu" id="menu" onClick={this.handleClick} type="button">
+          <button aria-label="Abrir ou fechar menu" name="menu" id="menu" onClick={this.handleClick} type="button">
             { !menu ? <FontAwesomeIcon icon={faBars} />
               : <FontAwesomeIcon icon={faTimes} />}
           </button>
