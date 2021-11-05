@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./css/appTech.css";
-import mockupApp from "../img/iphone-mockup.png";
-import gifApp from "../img/gif-operation-app.gif";
+import mockupApp from "../img/iphone-mockup.avifs";
+import gifApp from "../img/gif-operation-app.avifs";
 import { appTech, textsRedColor, buttonHireNow } from "../textData";
 import Button from "./components/Button";
 

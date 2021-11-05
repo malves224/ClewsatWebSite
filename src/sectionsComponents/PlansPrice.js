@@ -9,19 +9,18 @@ import PlanCard from "./components/PlanCard";
 function PlansPrice() {
   const carrousel = useRef(null);
   function setScroll() {
-    carrousel.current.scrollLeft += 265;
+    const offSet = carrousel.current.offsetWidth;
+    carrousel.current.scrollLeft += offSet;
   }
 
   const handleClickNext = () => {
     const offSet = carrousel.current.offsetWidth;
-    const addScrollValue = offSet;
-    carrousel.current.scrollLeft += addScrollValue;
+    carrousel.current.scrollLeft += offSet;
   };
 
   const handleClickPrevious = () => {
     const offSet = carrousel.current.offsetWidth;
-    const addScrollValue = offSet;
-    carrousel.current.scrollLeft -= addScrollValue;
+    carrousel.current.scrollLeft -= offSet;
   };
 
   useLayoutEffect(() => setScroll());

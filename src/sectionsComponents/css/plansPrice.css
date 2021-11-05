@@ -77,9 +77,13 @@
 .carrousel-content button {
   background-color: #EB003F;
   border: none;
-  font-size: 22px;
+  font-size: 26px;
   color: #370B6D;
   cursor: pointer;
+}
+
+.button-navegation {
+  border-radius: 50%;
 }
 
 @media (min-width: 690px) {
