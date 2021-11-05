@@ -15,9 +15,11 @@ class HeaderHero extends Component {
     return (
       <header className="hero">
         <img src={imgMockup} alt="um carro e uma moto, e um celular com o app" />
-        <h1>{ heroText.title }</h1>
-        <p id="paragraph">{ heroText.paragraph }</p>
-        <Button src={buttonHireNow.src} text={buttonHireNow.text} />
+        <div className="call-hero">
+          <h1>{ heroText.title }</h1>
+          <p id="paragraph">{ heroText.paragraph }</p>
+          <Button src={buttonHireNow.src} text={buttonHireNow.text} />
+        </div>
       </header>
     );
   }

@@ -30,3 +30,9 @@
 	outline: inherit;
   color: white;
 }
+
+@media (min-width: 760px) {
+  .overlay {
+    width: 50%;
+  }
+}
