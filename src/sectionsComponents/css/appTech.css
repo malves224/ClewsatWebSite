@@ -11,7 +11,7 @@
 }
 
 .tech h2 {
-  padding-top: 230px;
+  padding-top: 185px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: bold;
@@ -34,8 +34,7 @@
 #app-gif {
   position: relative;
   z-index: 1;
-  margin-top: 118px;
-  bottom: 743px;
+  bottom: 623px;
   width: 286px;
   border-radius: 14px;
 }
@@ -64,7 +63,7 @@
 
 .about-app h3 {
   margin-top: 40px;
-  padding-top: 140px;
+  padding-top: 30px;
   color: #ffff;
   font-family: 'Nunito';
   font-style: normal;
@@ -98,4 +97,41 @@
   color: #ff253a;
   font-family: 'Nunito';
   font-style: normal;
+}
+
+@media (max-width: 472px) {
+  .about-app h3 { 
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 399px) {
+  .about-app h3 { 
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 870px) {
+  .tech { 
+    height: 529px;
+  }
+  .about-app {
+    height: 472px;
+  }
+  .mockup-app {
+    position: relative;
+    left: -248px;
+  }
+  .about-app {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .description-app {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+  }
 }
