@@ -2,12 +2,11 @@
 
 .called-frota {
   background-color: #370B6D;
-  padding: 10px;
+  padding: 10px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 250px;
 }
 
 .called-frota h2 {
@@ -30,6 +29,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  margin: 10px; 
 }
 
 .called-frota a {
@@ -37,4 +37,14 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+.called-frota > img {
+  max-width: 70%;
+}
+
+@media (min-width: 870px) {
+  .called-frota > p { 
+    max-width: 70%;
+  }
 }

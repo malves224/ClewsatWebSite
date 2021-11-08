@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import illustracao from "../img/ilustração_empresas.png";
 import Button from "./components/Button";
 import { textsRedColor, businessCall } from "../textData";
 import "./css/calledFrota.css";
@@ -15,7 +16,8 @@ class CalledFrota extends PureComponent {
         <p>
           {businessCall.subtitle}
         </p>
-        <Button src="http://www.clewsat.com.br/para-empresa" text="Saiba Mais" />
+        <img src={illustracao} alt="illustraçao de uma area de trabalho" />
+        <Button src="https://bit.ly/3bSLBBa" text="Saiba Mais" />
       </section>
     );
   }
