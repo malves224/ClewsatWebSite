@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./css/headerHero.css";
 import { heroText, buttonHireNow } from "../textData";
-import imgMockup from "../img/mockup-hero.avifs";
+import imgMockup from "../img/mockup-hero.webp";
 import Button from "./components/Button";
 
 class HeaderHero extends Component {
