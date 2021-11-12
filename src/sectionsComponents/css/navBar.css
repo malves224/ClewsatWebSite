@@ -30,4 +30,19 @@ nav button {
 	outline: inherit;
   font-size: 25px;
 }
- 
+
+
+ .menu-nav {
+   display: none;
+ }
+
+ @media (min-width: 1005px) {
+   .menu-nav {
+     display: block;
+     color: white;  
+   }
+   .menu-nav > ul {
+     display: flex;
+     flex-direction: row;
+   }
+ }
