@@ -10,8 +10,8 @@
   line-height: 49px;
   display: flex;
   flex-direction: column;
-  height: 400px;
-  justify-content: space-around;
+  height: 320px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -28,4 +28,10 @@
   width: 100%;
   justify-content: center;
   text-decoration: none;
+}
+
+@media (min-width: 790px) {
+  .called-end-container > h2 {
+    margin: 40px;
+  }
 }

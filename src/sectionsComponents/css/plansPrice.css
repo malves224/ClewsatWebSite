@@ -94,4 +94,7 @@
     justify-content: space-between;
     width: 100%;
   }
+  .plans-price {
+    height: 630px;
+  }
 }

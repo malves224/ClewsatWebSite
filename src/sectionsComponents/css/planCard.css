@@ -140,6 +140,8 @@
 @media (min-width: 690px) {
   .item-plan {
     min-width: 30%;
+    margin-right: 0;
+    height: 450px;
   }
   .benefit {
     font-size: 16px;
@@ -147,7 +149,10 @@
   .no-installation p {
     font-size: 18px;
   }
-  .item-plan {
-    margin-right: 0;
+  .header-promotional {
+    justify-content: space-around;
+  }
+  .body-item > a > button {
+    width: 80%;
   }
 }
