@@ -20,6 +20,10 @@ class HeaderHero extends Component {
           <p id="paragraph">{ heroText.paragraph }</p>
           <Button src={buttonHireNow.src} text={buttonHireNow.text} />
         </div>
+        <div className="hero-plans">
+          <h2>Planos a partir de:</h2>
+          <span>54,90Mensal</span>
+        </div>
       </header>
     );
   }

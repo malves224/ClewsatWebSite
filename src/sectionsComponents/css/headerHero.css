@@ -45,8 +45,46 @@
   text-decoration: none;
 }
 
+.hero-plans {
+  display: none;
+}
+
 @media (min-width: 760px) {
   .call-hero {
     padding: 0 15px;
+  }
+}
+
+@media (min-width: 1005px) {
+  .hero {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero img {
+    position: absolute;
+    max-width: 925px;
+    filter: brightness(90%);
+  }
+  .call-hero:read-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+    width: 50%;
+    height: 250px;
+    align-self: flex-end;
+    background-color: rgba(55, 11, 109, 0.7);
+    border-radius: 10px;
+    margin: 0 15px;
+    transition: 1s;
+  }
+  .hero-plans {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background: red;
+    color: white;
   }
 }
