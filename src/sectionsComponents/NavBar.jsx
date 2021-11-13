@@ -31,7 +31,14 @@ class NavBar extends Component {
     return (
       <>
         <nav>
-          <img src={imgLogo} alt="imagem do logo da empresa clewsat rastreamento." />
+          <Link
+            offset={-4500}
+            to="home"
+            smooth
+            duration={1000}
+          >
+            <img id="home" src={imgLogo} alt="imagem do logo da empresa clewsat rastreamento." />
+          </Link>
           <aside className="menu-nav">
             <ul>
               <li>
@@ -46,7 +53,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <Link
-                  offset={160}
+                  offset={80}
                   to="aplicativo"
                   smooth
                   duration={1000}
@@ -56,7 +63,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <Link
-                  offset={-50}
+                  offset={-120}
                   to="depoimentos"
                   smooth
                   duration={1000}
@@ -67,7 +74,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <Link
-                  offset={-80}
+                  offset={-120}
                   to="planos"
                   smooth
                   duration={1000}
