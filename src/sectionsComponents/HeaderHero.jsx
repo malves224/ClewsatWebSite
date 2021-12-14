@@ -33,7 +33,7 @@ class HeaderHero extends Component {
             duration={1000}
             offset={-120}
           >
-            <Button src={null} text="Veja os planos" />
+            <Button src="/" text="Veja os planos" />
           </Link>
         </div>
       </header>
