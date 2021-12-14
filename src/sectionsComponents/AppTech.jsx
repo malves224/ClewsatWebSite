@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./css/appTech.css";
 import mockupApp from "../img/iphone-mockup.avifs";
 import gifApp from "../img/gif-operation-app.avifs";
-import carImg from "../img/car-img.webp";
 import { appTech, textsRedColor, buttonHireNow } from "../textData";
 import Button from "./components/Button";
 
@@ -25,9 +24,6 @@ class AppTech extends Component {
           <img className="mockup-app" id="phone-img" src={mockupApp} alt="Imagen smartphone com o uso app de rastreamento." />
           <img className="mockup-app" id="app-gif" src={gifApp} alt="animação do aplicaivo" />
         </aside>
-        <div className="car-container">
-          <img id="img-car" src={carImg} alt="imagem de um carro" />
-        </div>
         <section className="about-app">
           <div className="description-app">
             <h3>{appTech.subtitle}</h3>

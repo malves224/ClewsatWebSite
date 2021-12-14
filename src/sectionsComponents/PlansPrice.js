@@ -56,8 +56,8 @@ function PlansPrice() {
       <header className="header-plans">
         <h2>{plansPrices.title}</h2>
         <div className="blackfriday-text">
-          <h3>BLACK FRIDAY</h3>
-          <p id="blackfriday-p">DE VERDADE</p>
+          <h3>Aproveite nossas</h3>
+          <p id="blackfriday-p">Ofertas ilimitada</p>
         </div>
       </header>
       {renderCarrousel()}

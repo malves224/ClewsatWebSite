@@ -98,3 +98,9 @@
     height: 630px;
   }
 }
+
+@media (min-width: 1005px) {
+  .carrousel-plans {
+    justify-content: space-around;
+  }
+}

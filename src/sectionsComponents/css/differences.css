@@ -6,7 +6,6 @@
   padding-top: 20px;
   background-color: #180A29;
   height: 780px;
-  margin-bottom: 100;
 }
 
 .differences h2 span {
@@ -50,12 +49,26 @@
 
 @media (min-width: 760px) {
   .card-diff { 
-    max-width: 250px;
+    width: 230px;
     margin-bottom: 30px;
   }
 
   .cards-differential {
     padding: 0 62px;
     justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1005px) {
+  .card-diff {
+    max-width: 340px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .differences {
+    justify-content: space-around;
+    height: 550px;
   }
 }

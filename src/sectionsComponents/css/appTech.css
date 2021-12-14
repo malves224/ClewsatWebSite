@@ -139,5 +139,14 @@
   }
 }
 
-@media (min-width: 1005px) {
+@media (min-width: 1350px) {
+  .tech h2 {
+      padding-top: 8px;
+  }
+  .tech p {
+    width: 80%;
+  }
+  .about-app {
+    height: 370px;
+  }
 }
