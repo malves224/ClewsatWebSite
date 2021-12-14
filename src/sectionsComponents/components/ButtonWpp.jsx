@@ -8,7 +8,6 @@ export default class ButtonWpp extends PureComponent {
       <>
         <FloatingWhatsApp
           phone="+5511936186826"
-          message="Olá, tenho interesse no sistema de rastreamento."
           popupMessage="Olá, como podemos ajudar?"
           size={65}
           zIndex={100}

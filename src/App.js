@@ -13,9 +13,28 @@ import Footer from "./sectionsComponents/Footer";
 import ButtonWpp from "./sectionsComponents/components/ButtonWpp";
 
 function App() {
+  const setAltWpBtn = () => {
+    const imgWpp = document.querySelector("._1zufg img");
+    const imgSendMsg = document.querySelector("._NeBrT img");
+    imgWpp.setAttribute("alt", "imagen do button whatsapp");
+    imgSendMsg.setAttribute("alt", "imagen para enviar mensagem");
+  };
+
+  const setLabelInputWpp = () => {
+    const textareaEl = document.querySelector("._22mst textarea");
+    const elementpai = document.querySelector("._22mst");
+    const labelEl = document.createElement("label");
+    labelEl.id = "label-msg";
+    textareaEl.setAttribute("id", "msgForSend");
+    elementpai.appendChild(labelEl);
+    document.getElementById("label-msg").setAttribute("for", "msgForSend");
+  };
+
   useEffect(() => {
     ReactGA.initialize("G-NJ8KWTZ84J");
     ReactGA.send("/");
+    setLabelInputWpp();
+    setAltWpBtn();
   }, []);
 
   return (
