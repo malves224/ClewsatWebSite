@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/headerHero.css";
+import { Link } from "react-scroll";
 import { heroText, buttonHireNow } from "../textData";
 import imgMockup from "../img/mockup-hero.webp";
 import Button from "./components/Button";
@@ -21,8 +22,19 @@ class HeaderHero extends Component {
           <Button src={buttonHireNow.src} text={buttonHireNow.text} />
         </div>
         <div className="hero-plans">
-          <h2>Planos a partir de:</h2>
-          <span>54,90Mensal</span>
+          <h3>
+            Planos a partir de:
+            <br />
+            <span>R$54,90 Mensal</span>
+          </h3>
+          <Link
+            to="planos"
+            smooth
+            duration={1000}
+            offset={-120}
+          >
+            <Button src={null} text="Veja os planos" />
+          </Link>
         </div>
       </header>
     );
