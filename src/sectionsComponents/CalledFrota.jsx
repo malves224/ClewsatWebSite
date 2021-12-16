@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import illustracao from "../img/ilustração_empresas.webp";
+import illustracao from "../img/ilustração_empresas.svg";
 import Button from "./components/Button";
 import { textsRedColor, businessCall } from "../textData";
 import "./css/calledFrota.css";
