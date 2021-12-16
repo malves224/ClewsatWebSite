@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "./css/plansPrice.css";
@@ -23,7 +23,9 @@ function PlansPrice() {
     carrousel.current.scrollLeft -= offSet;
   };
 
-  useLayoutEffect(() => setScroll());
+  useEffect(() => {
+    setScroll();
+  }, []);
 
   function renderCarrousel() {
     return (
@@ -34,13 +36,13 @@ function PlansPrice() {
           onClick={handleClickPrevious}
           type="button"
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon value="previous" icon={faChevronLeft} />
         </button>
         <div ref={carrousel} className="carrousel-plans">
           {plansPrices.plansCard.map((plan) => <PlanCard key={plan.plan} plan={plan} />)}
         </div>
         <button
-          aria-label="Anterior"
+          aria-label="Proximo"
           className="button-navegation"
           onClick={handleClickNext}
           type="button"

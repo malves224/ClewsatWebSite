@@ -10,7 +10,7 @@
 }
 
 .tech h2 {
-  padding-top: 185px;
+  padding-top: 205px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: bold;
@@ -103,14 +103,14 @@
 }
 
 @media (max-width: 472px) {
-  .about-app h3 { 
-    padding-top: 45px;
+  .tech h2 { 
+    padding-top: 220px;
   }
 }
 
 @media (max-width: 399px) {
   .about-app h3 { 
-    padding-top: 60px;
+    padding-top: 125px;
   }
 }
 

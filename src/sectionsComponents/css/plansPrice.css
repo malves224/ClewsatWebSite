@@ -60,7 +60,6 @@
 .carrousel-plans {
   overflow: hidden;
   scroll-behavior: smooth;
-  max-height: 504px;
   display: flex;
   margin: 0;
   padding: 0;
@@ -86,7 +85,7 @@
   border-radius: 50%;
 }
 
-@media (min-width: 690px) {
+@media (min-width: 650px) {
   .button-navegation {
     display: none;
   }
