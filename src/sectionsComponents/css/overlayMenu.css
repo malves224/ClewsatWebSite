@@ -13,7 +13,7 @@
 }
 
 .overlay {
-  margin-top: 100px;
+  margin-top: 80px;
   position: fixed;
   background-color: #180A29;
   width: 100%;
@@ -29,4 +29,10 @@
 	cursor: pointer;
 	outline: inherit;
   color: white;
+}
+
+@media (min-width: 760px) {
+  .overlay {
+    width: 50%;
+  }
 }

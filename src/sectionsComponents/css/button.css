@@ -9,7 +9,7 @@
     font-size: 22px;
 }
 
-#button {
+.button {
     width: 70%;
     height: 50px;
     border: none;
@@ -28,4 +28,10 @@
 
 .div-button a { 
     width: 100%;
+}
+
+@media (min-width: 1350px) {
+    .tech h2 {
+        padding-top: 5px;
+    }
 }

@@ -2,14 +2,9 @@
 
 .item-plan {
   background-color: #ffff;
-  border-radius: 8px;
-  min-width: 90%;
-  height: 400px;
-  margin-right: 8vw;
-}
-
-.item-plan:last-child  {
-  margin-left: 0;
+  border-radius: 20px;
+  min-width: 100%;
+  height: 420px;
 }
 
 .body-item {
@@ -127,19 +122,37 @@
 }
 
 .benefit-check {
-  color: #8F8F8F;
+  color: #504f4f;
 }
 
 .benefit-No {
-  color: #D1D1D1;
+  color: #5a5959;
   text-decoration-line: line-through;
   font-size: 16px;
 }
 
+.item-plan:nth-child(2) {
+  /*margin: 0 5px;*/
+}
 
-@media (min-width: 690px) {
+
+@media (max-width: 329px) {
+  .item-plan {
+    min-width: 234px;
+  }
+  .header-plans h2 {
+    font-size: 35px;
+  }
+  .blackfriday-text h3 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 650px) {
   .item-plan {
     min-width: 30%;
+    margin-right: 0;
+    height: 450px;
   }
   .benefit {
     font-size: 16px;
@@ -147,7 +160,10 @@
   .no-installation p {
     font-size: 18px;
   }
-  .item-plan {
-    margin-right: 0;
+  .header-promotional {
+    justify-content: space-around;
+  }
+  .body-item > a > button {
+    width: 80%;
   }
 }

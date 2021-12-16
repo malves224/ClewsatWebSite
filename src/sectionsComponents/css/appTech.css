@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 .tech {
-  position: relative;
   background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
@@ -11,15 +10,15 @@
 }
 
 .tech h2 {
-  padding-top: 230px;
-  font-family: Nunito;
+  padding-top: 205px;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: bold;
   font-size: 52px;
 }
 
 .tech p {
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -34,14 +33,13 @@
 #app-gif {
   position: relative;
   z-index: 1;
-  margin-top: 118px;
-  bottom: 780px;
-  width: 305px;
+  bottom: 623px;
+  width: 286px;
   border-radius: 14px;
 }
 
 #phone-img {
-  width: 340px;
+  width: 320px;
   z-index: 2;
 }
 
@@ -55,7 +53,7 @@
 }
 
 .about-app a {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -64,9 +62,9 @@
 
 .about-app h3 {
   margin-top: 40px;
-  padding-top: 140px;
+  padding-top: 30px;
   color: #ffff;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -76,25 +74,79 @@
 
 .about-app h4 { 
   color: #ffff;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 20px;
 } 
 
 .paragraph {
   margin-top: 10px;
   padding: 7.5px 20px;
   color: #E5E5E5;
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
 }
 
+.car-container {
+  display: none;
+}
+
 .paragraph span { 
-  color: #EB003F;
+  color: #ff253a;
+  font-family: 'Nunito';
+  font-style: normal;
+}
+
+@media (max-width: 472px) {
+  .tech h2 { 
+    padding-top: 220px;
+  }
+}
+
+@media (max-width: 399px) {
+  .about-app h3 { 
+    padding-top: 125px;
+  }
+}
+
+@media (min-width: 870px) {
+  .tech { 
+    height: 529px;
+  }
+  .about-app {
+    height: 472px;
+  }
+  .mockup-app {
+    position: relative;
+    left: -248px;
+  }
+  .about-app {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .description-app {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .tech h2 {
+      padding-top: 8px;
+  }
+  .tech p {
+    width: 80%;
+  }
+  .about-app {
+    height: 370px;
+  }
 }

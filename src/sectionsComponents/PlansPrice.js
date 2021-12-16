@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import "./css/plansPrice.css";
@@ -9,38 +9,40 @@ import PlanCard from "./components/PlanCard";
 function PlansPrice() {
   const carrousel = useRef(null);
   function setScroll() {
-    const { current: { offsetWidth } } = carrousel;
-    carrousel.current.scrollLeft += offsetWidth;
+    const offSet = carrousel.current.offsetWidth;
+    carrousel.current.scrollLeft += offSet;
   }
 
   const handleClickNext = () => {
     const offSet = carrousel.current.offsetWidth;
-    const addScrollValue = offSet;
-    carrousel.current.scrollLeft += addScrollValue;
+    carrousel.current.scrollLeft += offSet;
   };
 
   const handleClickPrevious = () => {
     const offSet = carrousel.current.offsetWidth;
-    const addScrollValue = offSet;
-    carrousel.current.scrollLeft -= addScrollValue;
+    carrousel.current.scrollLeft -= offSet;
   };
 
-  useLayoutEffect(() => setScroll());
+  useEffect(() => {
+    setScroll();
+  }, []);
 
   function renderCarrousel() {
     return (
       <div className="carrousel-content">
         <button
+          aria-label="Anterior"
           className="button-navegation"
           onClick={handleClickPrevious}
           type="button"
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon value="previous" icon={faChevronLeft} />
         </button>
         <div ref={carrousel} className="carrousel-plans">
           {plansPrices.plansCard.map((plan) => <PlanCard key={plan.plan} plan={plan} />)}
         </div>
         <button
+          aria-label="Proximo"
           className="button-navegation"
           onClick={handleClickNext}
           type="button"
@@ -52,13 +54,12 @@ function PlansPrice() {
   }
 
   return (
-    <section className="plans-price">
+    <section id="planos" className="plans-price">
       <header className="header-plans">
         <h2>{plansPrices.title}</h2>
-        <p>Escolha seu plano</p>
         <div className="blackfriday-text">
-          <h3>BLACK FRIDAY</h3>
-          <p id="blackfriday-p">DE VERDADE</p>
+          <h3>Aproveite nossas</h3>
+          <p id="blackfriday-p">Ofertas ilimitada</p>
         </div>
       </header>
       {renderCarrousel()}

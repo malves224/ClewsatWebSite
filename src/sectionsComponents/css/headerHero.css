@@ -14,7 +14,7 @@
 }
 
 .hero img { 
-  width: 90%;
+  width: 85%;
   margin-bottom: 25px;
 }
 
@@ -43,4 +43,78 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+.hero-plans {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .call-hero {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1005px) {
+  .hero {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero img {
+    position: absolute;
+    filter: brightness(90%);
+  }
+  .call-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+    width: 40%;
+    height: 250px;
+    align-self: center;
+    background-color: rgba(55, 11, 109, 0.7);
+    border-radius: 10px;
+    margin: 0 15px;
+    transition: 1s;
+    order: 2;
+  }
+  .hero-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: rgba(55, 11, 109, 0.7);
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    z-index: 1;
+    height: 220px;
+  }
+  .hero-plans > h3 {
+    font-family: 'Nunito';
+    font-size: 22px;
+  }
+  .hero-plans > h3 > span {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1884px) {
+  .hero-plans {
+    background-color: transparent;
+  }
+  .call-hero {
+  }
+}
+
+@media (min-width: 1350px) {
+  .hero {
+    height: 500px;
+  }
+  .hero > img {
+    width: 1150px;
+    top: 150px;
+  }
 }

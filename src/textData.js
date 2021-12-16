@@ -8,7 +8,7 @@ const heroText = {
 
 const buttonHireNow = {
   text: "Contrate agora",
-  src: "https://api.whatsapp.com/send?phone=5511978046030&text=Ol%C3%A1,%20Tenho%20interesse%20no%20sistema%20de%20rastreamento.",
+  src: "https://bit.ly/3bKeAHh",
 };
 
 const textsRedColor = {
@@ -96,7 +96,7 @@ const plansPrices = {
   },
   {
     plan: "Pro",
-    price: "R$ 69,90",
+    price: "R$ 79,90",
     recurrence: "Por mês",
     promotional: {
       status: true,

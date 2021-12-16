@@ -9,11 +9,12 @@ class GoogleEvidence extends PureComponent {
   render() {
     const { title } = googleEvidence;
     return (
-      <section className="google-evidence">
+      <section id="depoimentos" className="google-evidence">
         <div id="title-google">
           <h2>{title}</h2>
           <img src={fiveStar} alt="5 estrelas do google" />
         </div>
+        <p id="evidence-descricption">Veja o que alguns de nossos clientes estão dizendo.</p>
         <CarrouselDeposition />
       </section>
     );
