@@ -106,11 +106,11 @@ const plansPrices = {
   },
   {
     plan: "Premium",
-    price: "R$ 89,90",
+    price: "R$ 99,90",
     recurrence: "Por mês",
     promotional: {
       status: true,
-      pricePromotional: "R$ 79,90",
+      pricePromotional: "R$ 89,90",
     },
     benefits: (plan) => returnBenefitsArr(plan),
   }],
