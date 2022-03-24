@@ -20,7 +20,7 @@ A pagina está em produção acesse o link e confira mais https://protecao.clews
 -  Eslint
 
 ## Principais aprendizados 
-Utilizei muitas propriedades css já que eu não foi usado nenhum framework de css, tive que ter um cuidado com a otimização das imagens e tags semânticas para garantir um SEO funcione bem. 
+Utilizei muitas propriedades css já que eu não foi usado nenhum framework de css, tive que ter um cuidado com a otimização das imagens e tags semânticas para garantir um SEO que funcione bem. 
 Fazer build e deploy de uma aplicação react.
 Trabalhar com media query para a pagina ser responsiva de acordo com a tela do usuário. 
 
